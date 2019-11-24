@@ -385,6 +385,7 @@ AFRAME.registerShader('html', {
       background: undefined,
       width: this.__width || width,
       height: this.__height || height,
+      allowTaint: true,
       onrendered: this.__draw.bind(this)
     })
   },
